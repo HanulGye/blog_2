@@ -76,6 +76,39 @@
 		text-decoration: none;
 	}
 	
+	
+	/*==============left menu 시작=====================*/ 
+	.leftMenu{
+		width: 270px;
+		height: 700px;
+		/*background-color: red;*/
+		
+		text-shadow: 2px 2px 1px black;
+		color: white;
+		float: left;
+		
+	}
+	
+		#upper{
+			
+			font-family: above;
+			font-size: 22px;
+		}
+		
+		#upper dt{
+			padding-top: 10px;
+		}
+		
+		#lower{
+			padding-top: 7px;
+			font-family: 돋움체;
+			font-size: 15px;
+		}
+	
+	
+	/*==============left menu 끝=====================*/
+	
+	
 	/*==============main 시작=====================*/ 
 	.main{
 		width: 1200px;
@@ -115,6 +148,29 @@
 				text-align:right;
 				display: none;
 			}
+		
+		/*상단 메뉴 타이틀*/
+		.menuName{
+			width: 930px;
+			height: 100px;
+			float: left;	
+			/*background-color: blue;*/
+		}
+		
+			.menuCenter{
+				width: 400px;
+				height: inherit;
+				float: inherit;
+				margin: 0 27%;
+				/*background-color: navy;*/
+				
+				font-family: above;
+				font-size: 30px;
+				color: white;
+				text-align: center;
+				text-shadow: 2px 2px 1px black;
+			}
+		/*상단 메뉴 타이틀 끝*/
 			
 		
 		#logo{
@@ -136,4 +192,5 @@
 		text-align: center;
 		padding: 10px 0px;
 		box-sizing : border-box;
+		
 	}

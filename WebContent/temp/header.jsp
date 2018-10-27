@@ -4,11 +4,11 @@
 		
 		<div class= "hCenter">
 			<div class="topOne">
-				<img src="./img/topLogo.png" height=50px>
+				<img src="<%= request.getContextPath()%>/img/topLogo.png" height=50px>
 			</div>
 			<div class="topTwo">
 				<dl>
-					<dt><a href="./main.jsp">Main</a></dt>
+					<dt><a href="<%= request.getContextPath() %>/main.jsp">Main</a></dt>
 					<dt><a href="">About</a></dt>
 					<dt><a href="">Contact</a></dt>
 				</dl>

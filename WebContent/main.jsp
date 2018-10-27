@@ -65,7 +65,7 @@
 		<div class="menu" id="fRight">
 			<p onmouseenter="showrMenu()">Work?</p>
 			<dl id="subRmenu" onmouseenter="showrMenu()" onmouseleave="hiderMenu()">
-				<dt><a href="">Coding</a></dt>
+				<dt><a href="<%= request.getContextPath()%>/board_coding/coding.jsp">Coding</a></dt>
 				<dt><a href="">Japanese</a></dt>
 				<dt><a href="">Recording</a></dt>
 			</dl>

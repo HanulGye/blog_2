@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.size_board{
+		width: 1200px;
+		height: 700px;
+		margin: auto;
+		display: block;		 
+	}
+.content_b{
+		width: 930px;
+		height: 600px;
+		background-color: gray;
+		display: inline-block;
+}	
