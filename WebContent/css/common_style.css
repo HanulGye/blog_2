@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+	@font-face{
+		font-family: "above";
+		src: url("../font/above.ttf") format("truetype");
+		
+	}
+	/*==============header 시작=====================*/ 
+	.header{
+		width: 100%;
+		height: 50px;
+		/*background-color: yellow;*/
+	}
+	
+		.hCenter{
+			width: 1200px;
+			height: 50px;
+			/*background-color: blue;*/
+			margin: auto;
+			
+		}
+			.hCenter > div{
+				display: inline-block;
+			}
+		
+		
+			.topOne{
+				width: 220px;
+				height: inherit;
+				/*background-color: purple*/
+			}
+			
+			.topTwo{
+				width: 740px;
+				height: inherit;
+				/*background-color: red;*/
+				font-family: above;
+				font-size: 30px;
+				color: white;
+				text-shadow: 2px 2px 1px black;
+				text-align: center;
+			}
+				.topTwo dt{
+					float:left;
+					line-height: 5%;
+					width: 245px;
+					
+				}
+			
+			
+			.topThree{
+				width: 220px;
+				height: inherit;
+				/*background-color: green;*/
+				font-family: above;
+				font-size: 25px;
+				color: white;
+				text-shadow: 2px 2px 1px black;
+				text-align: center;
+			}
+				.topThree dt{
+					float:right;
+					line-height: 10%;
+					width: 110px;
+					
+				}
+		
+	
+	/*==============header 끝=====================*/ 
+	
+	
+	a:link{color: white;}
+	a:visited{color: white;}
+	a:hover{color : darkgray;}
+	a{
+		text-decoration: none;
+	}
+	
+	/*==============main 시작=====================*/ 
+	.main{
+		width: 1200px;
+		height: 400px;
+		margin: auto;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		/*background-color: gray;*/
+		 
+	}
+		.menu{
+			width: 225px;
+			height: 400px;
+			/*background-color: coral;*/
+			font-family: above;
+			font-size: 45px;
+			text-align: center;
+			color: white;
+			text-shadow: 2px 2px 1px black;
+		}
+			#fLeft{
+			float: left;
+			}
+			#fRight{
+			float: right;
+			}
+			
+			#subLmenu{
+				font-size: 35px;
+				text-align:left;
+				display: none;
+				
+			}
+			
+			#subRmenu{
+				font-size: 35px;
+				text-align:right;
+				display: none;
+			}
+			
+		
+		#logo{
+			padding-top: 108.5px;
+			padding-left: 100px;
+		}
+	/*==============main 끝=====================*/ 
+		
+		
+	/*==============footer 시작=====================*/ 
+	.footer{
+		width: 100%;
+		height: 90px;
+		background-color: seagreen;
+		font-family: 돋움;
+		font-size: 13px;
+		color: white;
+		text-shadow: 2px 2px 1px black;
+		text-align: center;
+		padding: 10px 0px;
+		box-sizing : border-box;
+	}
