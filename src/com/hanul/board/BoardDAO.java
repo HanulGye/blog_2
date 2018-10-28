@@ -31,10 +31,12 @@ public class BoardDAO {
 		
 		
 		Connection con = DBConnector.getConnect();
-		String sql = "SELECT * FROM"+
-					"(SELECT rownum R, N.* FROM"+
-					"(SELECT num, subject, writer, reg_date, hit FROM board WHERE "+ kind +"like ? ORDER BY num desc) N) "+
-					"WHERE R BETWEEN ? AND ?";
+		String sql = "SELECT * FROM "
+				+ "(select rownum R, N.* from "
+				+ "(select num, subject, writer, reg_date, hit from board "
+				+ "where "+kind+" like ? "
+				+ "order by num desc) N) "
+				+ "where R between ? and ?";
 		PreparedStatement st = con.prepareStatement(sql);
 		st.setString(1, "%"+search+"%");
 		st.setInt(2, startRow);
@@ -50,6 +52,8 @@ public class BoardDAO {
 			boardDTO.setNum(rs.getInt("num"));
 			boardDTO.setSubject(rs.getString("subject"));
 			//boardDTO.setContent(rs.getString("content"));
+			//조회한 쿼리에 content가 없기에 sql문 오류남
+			//db 자체에 content가 저장되어있기에 searchbar로 찾는 부분도 문제 없음
 			boardDTO.setWriter(rs.getString("writer"));
 			boardDTO.setReg_date(rs.getDate("reg_date"));
 			boardDTO.setHit(rs.getInt("hit"));

@@ -30,7 +30,7 @@
 	List<BoardDTO> ar = boardDAO.selectList(kind, search, startRow, lastRow);
 	
 	
-	/* int totalCount = boardDAO.getCount(kind, search);
+	int totalCount = boardDAO.getCount(kind, search);
 	
 	int totalPage = totalCount/perPage;
 	if(totalCount%10 != 0){
@@ -53,7 +53,7 @@
 	
 	if(curBlock == totalBlock){
 		lastNum = totalPage;
-	} */
+	} 
 			
 %>    
 <!DOCTYPE html>
@@ -76,8 +76,8 @@
 	
 			
 	<div class="content_b">
-	
-	<table>
+	<div class="container" style="width: 930px">
+	<table class="table table-hover">
 			
 			<tr>
 				<th>Num</th>
@@ -90,7 +90,7 @@
 			<%for(BoardDTO boardDTO : ar){ %>
 			<tr>
 				<td><%= boardDTO.getNum()%></td>
-				<td><a href=""><%= boardDTO.getSubject()%></a></td>
+				<td><a href="" style="color: black"><%= boardDTO.getSubject()%></a></td>
 				<td><%= boardDTO.getWriter()%></td>
 				<td><%= boardDTO.getReg_date()%></td>
 				<td><%= boardDTO.getHit()%></td>
@@ -99,14 +99,14 @@
 			<%} %>
 			
 	</table>
+	</div>	
 		
-		
-		<!-- <div id="searchBar">
+		<div id="searchBar">
 			<form class="form-inline" action="./coding.jsp">
 			    <div class="form-group">
 			    	<select class="form-control" name="kind">
 				        <option>subject</option>
-				        <option>contents</option>
+				        <option>content</option>
 				        <option>writer</option>
 			     	</select>	
 						    
@@ -117,12 +117,12 @@
 			  </form>
 		</div>
 		
-		<div>
-			<a href="./noticeWriteForm.jsp" class="btn btn-warning" role="button" id="wrtieB">Write</a>
-		</div> -->
+		<div style="text-align: right">
+			<a href="" class="btn btn-primary" role="button">Write</a>
+		</div> 
 	
-		<%-- <div class="container-fluid">
-			<div class="row">
+		<div class="container-fluid">
+			<div class="row" style="text-align: center">
 				    
 			  <ul class="pagination">
 			  	<li><a href="./coding.jsp?curPage=<%= 1%>&kind=<%=kind%>&search=<%=search%>"><span class="glyphicon glyphicon-backward"></span></a></li>
@@ -141,7 +141,7 @@
 			  </ul>
 			  
 		  	</div>
-		</div> --%>
+		</div>
 	
 	
 	</div>
